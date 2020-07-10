@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{ padding: 0px;
+margin: 0}
+body{font-family: 'Roboto', sans-serif;}
+#back{
+background-image: url(https://hipertextual.com/files/2014/03/windows_xp_bliss-wide.jpg);
+background-size: 100vw 100vh;
+ background-repeat: no-repeat;
+  }
+ .popUp{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   background: #dfe6e9;
+   border-radius: 5px;
+   color: black;
+   -webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+ }
+.tittle{ padding-left: 5px;}
+.buttons{
+  color: white;
+top:0;
+background-color: blue;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+.close{
+  background: red;
+  padding-left: 6px;
+  padding-right:6px;
+  border-radius: 5px;
+  border: solid black 0.1em;
+}
+.close:hover{
+  cursor: pointer;
+}
+
+.message{
+  margin: 50px;
+}
+
+.options{display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 15px;
+}
+.yes{
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  background-color: green;
+  width: 30%;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+  border: 0.1em black solid
+}
+
+.noup{
+  cursor: pointer;
+  position: absolute;
+  right: 70px;
+  background-color: red;
+  width: 30%;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+  border: 0.1em black solid
+}
+.icon{
+  width: 150px;
+  height: 150px;
+  display: absolute;
+  z-index: 80
+}
+.menu{
+  position: fixed;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     background: #0652DD;
+     height: 5vh;
+     justify-content: space-between;
+     -webkit-box-shadow: 14px -4px 37px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px -4px 37px -16px rgba(0,0,0,0.75);
+box-shadow: 14px -4px 37px -16px rgba(0,0,0,0.75);
+}
+.banner{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  align-items: center;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 30px;
+  background: #009432;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 10px 2px 21px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 2px 21px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 2px 21px 0px rgba(0,0,0,0.75);
+}
+.windows{
+  background:  url(https://i.dlpng.com/static/png/6612203_preview.png);
+    background-size: 100% 100%;
+     background-repeat: no-repeat;
+     height: 5vh;
+     width: 40px;
+
+}
+.space{
+  color: white;
+    font-weight: bold;
+
+}
+.onClose{
+  display: none;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+background: grey;
+border-radius: 5px;
+color: black;
+-webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);}
+#cat{
+width: 70px;
+  height: 70px;
+  background:url(https://thypix.com/wp-content/uploads/sad-cat-63-600x547.jpg);
+
+  background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+.onClose:hover{
+  cursor: pointer;
+}
+h3{
+  top:0;
+  /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    font-family: "Avenir Next Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+position: relative;
+    -webkit-animation: moving 5s infinite;
+    animation: moving 5s infinite;
+}
+#noup{
+  text-align: center;
+  position: relative;
+      -webkit-animation: leftanr 5s infinite;
+      animation: leftanr 5s infinite;
+}
+#awwwn{
+  -webkit-animation: color 5s infinite;
+  animation: color 5s infinite;
+}
+
+.yassss{
+  display: none;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+background: grey;
+border-radius: 5px;
+color: black;
+-webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.75);}
+
+#gatos{
+  background-image: url(https://i.pinimg.com/236x/f8/d1/19/f8d1198c8b0dd7c3ef5af898a2257967.jpg);
+  background-size: 100% 100%;
+   background-repeat: no-repeat;
+   height: 200px;
+   width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@-webkit-keyframes color {
+  0% {  -webkit-text-fill-color: white;}
+  25% {  -webkit-text-fill-color: blue;}
+  50% {  -webkit-text-fill-color: red;}
+  75% {  -webkit-text-fill-color: orange;}
+  100% {  -webkit-text-fill-color: yellow;}
+}
+@keyframes color {
+  0% {  -webkit-text-fill-color: white;}
+  25% {  -webkit-text-fill-color: blue;}
+  50% {  -webkit-text-fill-color: red;}
+  75% {  -webkit-text-fill-color: orange;}
+  100% {  -webkit-text-fill-color: yellow;}
+}
+@-webkit-keyframes leftanr {
+  0% {left: 0%;}
+  25% {left: 30%;}
+  50% {left: 60%;}
+  75% {left: 30%;}
+  100% {left: 0%;}
+}
+@keyframes leftanr {
+  0% {left: 0%;}
+  25% {left: 30%;}
+  50% {left: 60%;}
+  75% {left: 30%;}
+  100% {left: 0%;}
+}
+@-webkit-keyframes moving {
+  0% {top: 0px;}
+  25% {top: 50px;}
+  50% {top: 0px;}
+  75% {top: -50px;}
+  100% {top: 0px;}
+}
+
+@keyframes moving {
+    0% {top: 0px;}
+    25% {top: 50px;}
+    50% {top: 0px;}
+    75% {top: -50px;}
+    100% {top: 0px;}
+}
